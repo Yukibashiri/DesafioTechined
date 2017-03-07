@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desafiotechined.ControllerExtrato">
+   <children>
+      <Label layoutX="205.0" layoutY="50.0" prefHeight="30.0" prefWidth="191.0" text="EXTRATO BANCÁRIO">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="27.0" layoutY="122.0" onMouseEntered="#carregarTransacoes" prefHeight="219.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="dataOperacaoColumn" prefWidth="128.0" text="Data da Realização" />
+          <TableColumn fx:id="operacaoColumn" prefWidth="136.0" text="Operação" />
+            <TableColumn fx:id="valorColumn" minWidth="7.0" prefWidth="58.0" text="Valor" />
+            <TableColumn fx:id="InformacaoColumn" prefWidth="223.0" text="Informação Adicional" />
+        </columns>
+      </TableView>
+      <Label layoutX="256.0" layoutY="356.0" text="Dados Referente a conta: " />
+      <Label fx:id="lblConta" layoutX="393.0" layoutY="356.0" textFill="#1b3b64" />
+      <Hyperlink layoutX="546.0" layoutY="362.0" onAction="#voltar" text="Voltar" />
+   </children>
+</AnchorPane>

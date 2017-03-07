@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onMouseEntered="#verificarSaldo" prefHeight="216.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desafiotechined.ControllerSaldo">
+   <children>
+      <Label layoutX="55.0" layoutY="47.0" prefHeight="45.0" prefWidth="200.0" text="SEU SALDO É:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSaldoAtual" layoutX="300.0" layoutY="47.0" prefHeight="45.0" prefWidth="200.0" textFill="#4976e8">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCreditoEspecial" layoutX="55.0" layoutY="115.0" prefHeight="45.0" prefWidth="248.0" text="CREDITO ESPECIAL RESTANTE: " visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblValorEspecial" layoutX="311.0" layoutY="115.0" prefHeight="45.0" prefWidth="77.0" textFill="#9e180c" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="269.0" layoutY="168.0" onAction="#voltarMenu" prefHeight="34.0" prefWidth="63.0" text="Voltar">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="lblRestante" layoutX="400.0" layoutY="115.0" prefHeight="45.0" prefWidth="95.0" text="Utilizado" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblValorUtilizado" layoutX="495.0" layoutY="115.0" prefHeight="45.0" prefWidth="77.0" textFill="#9e180c" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
